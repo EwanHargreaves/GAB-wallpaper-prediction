@@ -1,0 +1,18 @@
+{
+    "name": "EchoBot2",
+    "description": "",
+    "services": [
+        {
+            "type": "endpoint",
+            "appId": "",
+            "appPassword": "",
+            "endpoint": "http://localhost:3978/api/messages",
+            "id": "6993d950-a6fb-11e9-9c73-0771ca277fda",
+            "name": "http://localhost:3978/api/messages"
+        }
+    ],
+    "padlock": "",
+    "version": "2.0",
+    "overrides": null,
+    "path": "C:\\Users\\ewanh\\source\\repos\\EchoBot2\\EchoBot2.bot"
+}
