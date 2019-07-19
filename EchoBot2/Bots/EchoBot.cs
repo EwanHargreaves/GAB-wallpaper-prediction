@@ -32,7 +32,8 @@ namespace EchoBot2.Bots
         /// <returns>Awaitable image analysis result.</returns>
         private async Task<string> AnalyzeUrlAsync(string imageUrl, ITurnContext<IMessageActivity> turnContext, CancellationToken cancellationToken)
         {
-            var test = new ApiKeyServiceClientCredentials("cb8628c62abf49c29fd7a129e52e0eb4");
+            string key = "<SERVICE CLIENT KEY>";
+            var test = new ApiKeyServiceClientCredentials(key);
             using (var client = new ComputerVisionClient(test) { Endpoint = "https://colourfind.cognitiveservices.azure.com/" })
             {
                 VisualFeatureTypes[] visualFeatures = new List<VisualFeatureTypes>() { VisualFeatureTypes.Color, VisualFeatureTypes.Description, VisualFeatureTypes.Tags }.ToArray();
